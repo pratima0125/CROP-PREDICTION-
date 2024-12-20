@@ -1,0 +1,166 @@
+/* Base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background:black;
+  color: #fff;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #d9f7e7;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-right: auto;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+}
+
+.container h1 {
+  color: #3aaf83;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container span {
+  font-size: 2.5rem;
+}
+
+/* Form styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #3aaf83;
+  outline: none;
+  box-shadow: 0 0 8px rgba(58, 175, 131, 0.3);
+}
+
+/* Button styling */
+.btn-submit {
+  background-color: #3aaf83;
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #2c8c67;
+}
+
+/* Result card styling */
+.result-card {
+  margin-top: 30px;
+    width: 20vw;
+    margin-left:25%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(0);
+}
+
+.result-card img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.result-card img:hover {
+  opacity: 0.9;
+}
+
+.result-body {
+  background-color: #3aaf83;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.result-body h5 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result-body p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Additional styling for form animations */
+.form-group label {
+  transition: color 0.3s ease;
+}
+
+.form-group label:hover {
+  color: #3aaf83;
+}
